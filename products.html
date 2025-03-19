@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 for proper text rendering -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsiveness on mobile devices -->
+    <title>Eco-Friendly Store</title> <!-- Title displayed in the browser tab -->
+    <link rel="stylesheet" href="styles.css"> <!-- Links the external CSS file for styling -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Eco-Friendly Products</h1> <!-- Main heading for the products page -->
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Product Grid (Container for all products) -->
+        <div class="product-grid">
+
+            <!-- Product 1: Reusable Eco Bag -->
+            <div class="product">
+                <img src="product1.jpg" alt="Eco Bag"> <!-- Image of the product -->
+                <h3>Reusable Eco Bag</h3> <!-- Product name -->
+                <p>Price: $10</p> <!-- Product price -->
+                <button onclick="addToCart('Reusable Eco Bag', 10)">Add to Cart</button> 
+                <!-- Calls the addToCart function when clicked -->
+            </div>
+
+            <!-- Product 2: Bamboo Toothbrush -->
+            <div class="product">
+                <img src="product2.jpg" alt="Bamboo Toothbrush"> <!-- Image of the product -->
+                <h3>Bamboo Toothbrush</h3> <!-- Product name -->
+                <p>Price: $5</p> <!-- Product price -->
+                <button onclick="addToCart('Bamboo Toothbrush', 5)">Add to Cart</button> 
+                <!-- Calls the addToCart function when clicked -->
+            </div>
+
+            <!-- Product 3: Metal Straw Set -->
+            <div class="product">
+                <img src="product3.jpg" alt="Metal Straw Set"> <!-- Image of the product -->
+                <h3>Metal Straw Set</h3> <!-- Product name -->
+                <p>Price: $8</p> <!-- Product price -->
+                <button onclick="addToCart('Metal Straw Set', 8)">Add to Cart</button> 
+                <!-- Calls the addToCart function when clicked -->
+            </div>
+
+        </div> <!-- End of Product Grid -->
+
+        <!-- Checkout and Cancel Buttons -->
+        <button id="checkoutBtn">Checkout</button> <!-- Navigates to invoice page upon click -->
+        <button id="clearCartBtn">Cancel</button> <!-- Clears the shopping cart -->
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p><a href="about.html">About Us</a></p> <!-- Link to the About Us page -->
+    </footer>
+
+    <!-- Link to External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 for compatibility -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design on mobile devices -->
+    <title>EcoShop - Login</title> <!-- Page title displayed in the browser tab -->
+    <link rel="stylesheet" href="styles.css"> <!-- Links the external CSS file for styling -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>EcoShop</h1> <!-- Displays the website name at the top of the page -->
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Login Form -->
+        <form id="loginForm">
+            <h2>Login</h2> <!-- Form title -->
+
+            <!-- Username Input Field -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" required> 
+            <!-- User must enter a username; field is required -->
+
+            <!-- Password Input Field -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" required minlength="8">
+            <!-- Password must be at least 8 characters long -->
+
+            <!-- Login Button -->
+            <button type="submit">Login</button> 
+            
+            <!-- Error Message Display (if login fails) -->
+            <p id="errorMessage" style="color: red;"></p>
+        </form>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p><a href="about.html">About Us</a></p> <!-- Link to About Us page -->
+    </footer>
+
+    <!-- Link to External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>

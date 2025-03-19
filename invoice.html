@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 for proper text rendering -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsiveness on mobile devices -->
+    <title>EcoShop - Invoice</title> <!-- Title displayed in the browser tab -->
+    <link rel="stylesheet" href="styles.css"> <!-- Links the external CSS file for styling -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Invoice</h1> <!-- Main heading for the invoice page -->
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <h2>Order Summary</h2> <!-- Section title for order details -->
+
+        <!-- Dynamic Invoice Details Container -->
+        <div id="invoiceDetails">
+            <!-- Order details will be dynamically populated via JavaScript -->
+        </div>
+
+        <!-- Buttons for downloading and exiting the invoice page -->
+        <button onclick="downloadInvoice()">Download Invoice</button> 
+        <!-- Calls the downloadInvoice() function to generate a downloadable invoice -->
+
+        <button onclick="window.location.href='products.html'">Exit</button> 
+        <!-- Redirects user back to the Products page -->
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p><a href="about.html">About Us</a></p> <!-- Link to the About Us page -->
+    </footer>
+
+    <!-- Link to External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
+
